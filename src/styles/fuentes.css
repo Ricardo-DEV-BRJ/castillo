@@ -1,0 +1,10 @@
+:root{
+  font-family: "montserrat", sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.v-application {
+  font-family: 'montserrat', sans-serif !important;
+}

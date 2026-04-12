@@ -1,0 +1,22 @@
+<script lang="ts" setup>
+import Bienvenida from '@/sections/Bienvenida.vue';
+import HeaderCatillo from '@/components/HeaderCatillo.vue';
+import Cartas from '@/sections/Cartas.vue';
+import Ramas from '@/sections/Ramas.vue';
+import Direccion from '@/sections/Direccion.vue';
+import FooterCastillo from '@/components/FooterCastillo.vue';
+import Redes from '@/sections/Redes.vue';
+
+</script>
+
+<template>
+  <HeaderCatillo />
+  <Bienvenida />
+  <Cartas />
+  <Ramas />
+  <Direccion />
+  <Redes/>
+  <FooterCastillo />
+</template>
+
+<style scoped></style>
