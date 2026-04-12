@@ -68,7 +68,7 @@ const lista = [
           </Motion>
         </v-col>
         <v-col cols="auto">
-          <Motion as="div" :initial="{ opacity: 0, x: 200 }" :whileInView="{ opacity: 1, x: 0 }" :viewport="{ once: true }"
+          <Motion as="div" :initial="{ opacity: 0, x: 20 }" :whileInView="{ opacity: 1, x: 0 }" :viewport="{ once: true }"
             :transition="{ duration: 0.6 }" class="cajaMap">
             <iframe class="rounded-lg mapa"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.0088923335629!2d-70.60807290763537!3d9.31368873281468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e63286498f08e2b%3A0x273ca6b0b8204c1a!2sEl%20Castillo%20Tu%20Centro%20Textil%20%E2%80%8E%7C%20Valera%20Trujillo!5e0!3m2!1ses-419!2sve!4v1775960326391!5m2!1ses-419!2sve"
