@@ -19,7 +19,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <h4 class="ma-0">Productos</h4>
-              <v-list items="Productos" class="bg-black">
+              <v-list class="bg-black">
                 <v-list-item>Telas</v-list-item>
                 <v-list-item>Hilos</v-list-item>
                 <v-list-item>Mercería</v-list-item>
@@ -28,7 +28,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <h4 class="ma-0">Contactos</h4>
-              <v-list items="Contacto" class="bg-black">
+              <v-list class="bg-black">
                 <v-list-item>
                   <v-icon>
                     mdi-phone

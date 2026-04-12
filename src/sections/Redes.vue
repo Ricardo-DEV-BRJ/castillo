@@ -5,7 +5,7 @@ import { Motion } from 'motion-v';
 </script>
 
 <template>
-  <v-container>
+  <v-container class="py-10">
     <h3 class="font-weigth-bold">
       No olvides seguirnos en nuestras redes sociales para estar al tanto de todas las novedades y eventos
       relacionados
@@ -14,7 +14,7 @@ import { Motion } from 'motion-v';
     <v-row>
       <v-col cols="12" sm="6">
         <Motion as="div" :initial="{ opacity: 0, x: -40 }" :whileInView="{ opacity: 1, x: 0 }"
-          :viewport="{ once: true }" :transition="{ duration: 0.8 }">
+          :viewport="{ once: true }" :transition="{ duration: 0.8 }" class="d-flex flex-column align-center justify-start">
           <v-img src="@/assets/elcastillovalera_qr.png" alt="QR Code" class="mt-4" width="80%">
             <template #placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
@@ -26,20 +26,14 @@ import { Motion } from 'motion-v';
       </v-col>
       <v-col cols="12" sm="6">
         <Motion as="div" :initial="{ opacity: 0, x: 100 }" :whileInView="{ opacity: 1, x: 0 }"
-          :viewport="{ once: true }" :transition="{ duration: 0.6 }" class="pa-10 d-flex flex-column align-center">
-          <v-img src="@/assets/qr-whatsapp.jpeg" alt="QR Code whatsapp" class="mt-4 rounded-lg wha" width="70%">
+          :viewport="{ once: true }" :transition="{ duration: 0.6 }" class="d-flex flex-column align-center">
+          <v-img src="@/assets/qr-whatsapp.jpeg" alt="QR Code whatsapp" class="mt-4 rounded-lg" width="80%">
             <template #placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="primary"></v-progress-circular>
               </v-row>
             </template>
           </v-img>
-          <h2 class="font-weight-bold mt-4 mb-2">
-            <v-icon>
-              mdi-whatsapp
-            </v-icon>
-            Contáctanos por WhatsApp
-          </h2>
         </Motion>
       </v-col>
     </v-row>

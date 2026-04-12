@@ -16,7 +16,7 @@ defineExpose({
 </script>
 
 <template>
-  <v-dialog v-model="modal" max-width="400px" scrollable close-on-back="false">
+  <v-dialog v-model="modal" max-width="400px">
     <v-card text="Nuestro número de contacto" title="Contacto" class="text-center">
       <div class="d-flex justify-center">
         <v-img src="@/assets/qr-whatsapp.jpeg" alt="QR Code whatsapp" class="mt-4 rounded-lg wha" width="70%">
@@ -27,8 +27,14 @@ defineExpose({
           </template>
         </v-img>
       </div>
+      <v-card-item class="d-flex justify-center">
+        <v-btn prepend-icon="mdi-close" variant="text" text="Cerrar" color="error" @click="closeModal()">
+          Cerrar
+        </v-btn>
+      </v-card-item>
     </v-card>
   </v-dialog>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
