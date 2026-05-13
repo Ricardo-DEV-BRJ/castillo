@@ -30,7 +30,7 @@ import { ArrowRight } from '@lucide/vue';
               <p class="text-white ma-0 text-opacity-80 text-lg">
                 Más de 500 variedades de telas premium importadas y nacionales
               </p>
-              <v-btn variant="text" class="text-white font-weight-bold">
+              <v-btn variant="text" class="text-white font-weight-bold" to="/telas">
                 Ver Colección
                 <ArrowRight :size="20" class="arrow-icon" />
               </v-btn>
@@ -39,17 +39,20 @@ import { ArrowRight } from '@lucide/vue';
         </v-col>
 
         <v-col cols="12" lg="4" class="d-flex flex-column ga-6">
-          <Motion :initial="{ opacity: 0, y: 40 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
-            :transition="{ duration: 0.6, delay: 0.1 }" class="relative h-290 group overflow-hidden rounded-xl-3">
-            <v-img src="../assets/hilos.jpg" alt="Hilos" cover class="w-100 h-100 image-zoom" />
-            <div class="overlay-gradient-small" />
-            <div class="absolute bottom-0 left-0 right-0 pa-8 content-text">
-              <h3 class="text-h3-fluid text-white mb-2">Hilos</h3>
-              <p class="text-white text-opacity-70 text-sm">Todas las tonalidades</p>
-            </div>
-          </Motion>
+          <v-card flat to="/merceria">
+            <Motion :initial="{ opacity: 0, y: 40 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
+              :transition="{ duration: 0.6, delay: 0.1 }" class="relative h-290 group overflow-hidden rounded-xl-3">
+              <v-img src="../assets/hilos.jpg" alt="Hilos" cover class="w-100 h-100 image-zoom" />
+              <div class="overlay-gradient-small" />
+              <div class="absolute bottom-0 left-0 right-0 pa-8 content-text">
+                <h3 class="text-h3-fluid text-white mb-2">Hilos</h3>
+                <p class="text-white text-opacity-70 text-sm">Todas las tonalidades</p>
+              </div>
+            </Motion>
+          </v-card>
 
-          <Motion :initial="{ opacity: 0, y: 40 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
+          <v-card flat to="/merceria">
+            <Motion :initial="{ opacity: 0, y: 40 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true }"
             :transition="{ duration: 0.6, delay: 0.2 }" class="relative h-290 group overflow-hidden rounded-xl-3">
             <v-img src="../assets/merceria.jpg" alt="Mercería" cover class="w-100 h-100 image-zoom" />
             <div class="overlay-gradient-small" />
@@ -58,6 +61,7 @@ import { ArrowRight } from '@lucide/vue';
               <p class="text-white text-opacity-70 text-sm">Botones y accesorios</p>
             </div>
           </Motion>
+        </v-card>
         </v-col>
 
         <v-col cols="12">
@@ -74,7 +78,7 @@ import { ArrowRight } from '@lucide/vue';
                     Equipos profesionales e industriales de las mejores marcas
                   </p>
                   <v-btn variant="flat" color="white" class="text-red-darken-3 font-weight-bold rounded-pill px-8"
-                    height="56">
+                    height="56" to="/maquinas">
                     Ver Modelos
                     <ArrowRight :size="20" class="ml-2" />
                   </v-btn>

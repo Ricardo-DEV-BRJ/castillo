@@ -16,7 +16,7 @@ const lista = [
   {
     icon: Clock,
     title: "Horario",
-    content: `Lunes a Jueves: 8:00am - 6:00pm \n Viernes y Sabados: 8:00am - 1:00pm \n 2:00pm - 6:00pm`
+    content: `Lunes a Jueves: 8:00am - 6:00pm \n Viernes: 8:00am - 1:00pm \n 2:00pm - 6:00pm \n Sábados: 8:00am - 6:00pm \n Domingos: 8:00am - 12:00pm`
   },
   {
     icon: 'mdi-instagram',

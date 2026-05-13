@@ -20,10 +20,9 @@
             <v-col cols="12" sm="6">
               <h4 class="ma-0">Productos</h4>
               <v-list class="bg-black">
-                <v-list-item>Telas</v-list-item>
-                <v-list-item>Hilos</v-list-item>
-                <v-list-item>Mercería</v-list-item>
-                <v-list-item>Máquinas</v-list-item>
+                <v-list-item to="/telas">Telas</v-list-item>
+                <v-list-item to="/merceria">Mercería</v-list-item>
+                <v-list-item to="/maquinas">Máquinas</v-list-item>
               </v-list>
             </v-col>
             <v-col cols="12" sm="6">
